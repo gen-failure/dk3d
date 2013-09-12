@@ -42,7 +42,6 @@ PC3D = {
         if (ok && node instanceof THREE.Mesh) {
           var bbMesh = new Physijs.ConvexMesh(node.geometry,world.bbMaterial,0);
           bbMesh.scale.set(props.scale_x, props.scale_y, props.scale_z);
-          bbMesh.position.y=7.5;
           world.scene.add(bbMesh);
         }
     }
