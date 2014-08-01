@@ -1,0 +1,1061 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>kripken/ammo.js · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta property="og:image" content="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
+    <meta name="hostname" content="github-fe111-cp1-prd.iad.github.net">
+    <meta name="ruby" content="ruby 1.9.3p194-tcs-github-tcmalloc (2012-05-25, TCS patched 2012-05-27, GitHub v1.0.36) [x86_64-linux]">
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="xhr-socket" href="/_sockets" />
+    
+    
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="584B9188:12D8:4CB23A5:52372E9D" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="96T9LfN6qWTVsnVxXW0cWuDbUejgA9LDF4hQttkaZzY=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-1e4633e47f8b05996d0513eaccf94c2ff0a6a243.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-a7192edf5255443a92680441f722274ed90a93eb.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+    
+
+      <script src="https://github.global.ssl.fastly.net/assets/frameworks-f86a2975a82dceee28e5afe598d1ebbfd7109d79.js" type="text/javascript"></script>
+      <script src="https://github.global.ssl.fastly.net/assets/github-15065af1aa90bd5052d5662dc59db098b822916e.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="150dbead5d79b419ec8e5c73a14151c0">
+
+        <meta property="og:title" content="ammo.js"/>
+  <meta property="og:type" content="githubog:gitrepository"/>
+  <meta property="og:url" content="https://github.com/kripken/ammo.js"/>
+  <meta property="og:image" content="https://github.global.ssl.fastly.net/images/gravatars/gravatar-user-420.png"/>
+  <meta property="og:site_name" content="GitHub"/>
+  <meta property="og:description" content="ammo.js - Direct port of the Bullet physics engine to JavaScript using Emscripten"/>
+
+  <meta name="description" content="ammo.js - Direct port of the Bullet physics engine to JavaScript using Emscripten" />
+
+  <meta content="173661" name="octolytics-dimension-user_id" /><meta content="kripken" name="octolytics-dimension-user_login" /><meta content="1815807" name="octolytics-dimension-repository_id" /><meta content="kripken/ammo.js" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="1815807" name="octolytics-dimension-repository_network_root_id" /><meta content="kripken/ammo.js" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/kripken/ammo.js/commits/master.atom" rel="alternate" title="Recent Commits to ammo.js:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <div class="wrapper">
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/signup">Sign up</a>
+      <a class="button" href="/login?return_to=%2Fkripken%2Fammo.js%2F">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="kripken/ammo.js"
+      data-branch="master"
+      data-sha="58961ec660ffb6133a232a4ed1a1de86360e3855"
+  >
+
+    <input type="hidden" name="nwo" value="kripken/ammo.js" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="octicon help tooltipped downwards" title="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+      
+
+
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+  <a href="/login?return_to=%2Fkripken%2Fammo.js"
+  class="minibutton with-count js-toggler-target star-button entice tooltipped upwards"
+  title="You must be signed in to use this feature" rel="nofollow">
+  <span class="octicon octicon-star"></span>Star
+</a>
+<a class="social-count js-social-count" href="/kripken/ammo.js/stargazers">
+  409
+</a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fkripken%2Fammo.js"
+        class="minibutton with-count js-toggler-target fork-button entice tooltipped upwards"
+        title="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/kripken/ammo.js/network" class="social-count">
+        34
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/kripken" class="url fn" itemprop="url" rel="author"><span itemprop="title">kripken</span></a></span
+          ><span class="repohead-name-divider">/</span><strong
+          ><a href="/kripken/ammo.js" class="js-current-repository js-repo-home-link">ammo.js</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+
+      <div class="repository-with-sidebar repo-container with-full-navigation">
+
+        <div class="repository-sidebar">
+            
+
+<div class="repo-nav repo-nav-full js-repository-container-pjax js-octicon-loaders">
+  <div class="repo-nav-contents">
+    <ul class="repo-menu">
+      <li class="tooltipped leftwards" title="Code">
+        <a href="/kripken/ammo.js" aria-label="Code" class="js-selected-navigation-item selected" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /kripken/ammo.js">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped leftwards" title="Issues">
+          <a href="/kripken/ammo.js/issues" aria-label="Issues" class="js-selected-navigation-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /kripken/ammo.js/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>29</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped leftwards" title="Pull Requests"><a href="/kripken/ammo.js/pulls" aria-label="Pull Requests" class="js-selected-navigation-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /kripken/ammo.js/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>1</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="repo-menu-separator"></div>
+    <ul class="repo-menu">
+
+      <li class="tooltipped leftwards" title="Pulse">
+        <a href="/kripken/ammo.js/pulse" aria-label="Pulse" class="js-selected-navigation-item " data-pjax="true" data-selected-links="pulse /kripken/ammo.js/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Graphs">
+        <a href="/kripken/ammo.js/graphs" aria-label="Graphs" class="js-selected-navigation-item " data-pjax="true" data-selected-links="repo_graphs repo_contributors /kripken/ammo.js/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Network">
+        <a href="/kripken/ammo.js/network" aria-label="Network" class="js-selected-navigation-item js-disable-pjax" data-selected-links="repo_network /kripken/ammo.js/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+            <div class="only-with-full-nav">
+              
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/kripken/ammo.js.git" readonly="readonly">
+
+    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/kripken/ammo.js.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/kripken/ammo.js" readonly="readonly">
+
+    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/kripken/ammo.js" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="octicon help tooltipped upwards" title="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+                <a href="/kripken/ammo.js/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   title="Download this repository as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+            </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+<div class="js-info-carrier" data-show-full-navigation="yes"></div>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description js-details-show">
+      <p>Direct port of the Bullet physics engine to JavaScript using Emscripten</p>
+    </div>
+
+
+
+</div>
+
+<div class="capped-box overall-summary ">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/kripken/ammo.js/commits/master">
+          <span class="num">
+            <span class="octicon octicon-history"></span>
+            138
+          </span>
+          commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/kripken/ammo.js/branches">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            2
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/kripken/ammo.js/releases">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            0
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        <a href="/kripken/ammo.js/contributors">
+          <span class="num">
+            <span class="octicon octicon-organization"></span>
+            1
+          </span>
+          contributor
+        </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/kripken/ammo.js/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f15501;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">66.5%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/kripken/ammo.js/search?l=c%2B%2B">
+                <span class="color-block language-color" style="background-color:#f34b7d;"></span>
+                <span class="lang">C++</span>
+                <span class="percent">26.7%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/kripken/ammo.js/search?l=c">
+                <span class="color-block language-color" style="background-color:#555;"></span>
+                <span class="lang">C</span>
+                <span class="percent">4.1%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/kripken/ammo.js/search?l=shell">
+                <span class="color-block language-color" style="background-color:#5861ce;"></span>
+                <span class="lang">Shell</span>
+                <span class="percent">1.7%</span>
+              </a>
+          </li>
+          <li>
+              <span class="other">
+                <span data-lang="Other" class="color-block language-color"></span>
+                <span class="lang">Other</span>
+                <span class="percent">0.9%</span>
+              </span>
+          </li>
+        </ol>
+      </div>
+  </div>
+
+</div>
+
+  <a href="#"
+     class="repository-lang-stats-graph js-toggle-lang-stats tooltipped downwards"
+     title="Show language statistics"
+     style="background-color:#ccc">
+  <span class="language-color" style="width:66.5%; background-color:#f15501;" itemprop="keywords">JavaScript</span><span class="language-color" style="width:26.7%; background-color:#f34b7d;" itemprop="keywords">C++</span><span class="language-color" style="width:4.1%; background-color:#555;" itemprop="keywords">C</span><span class="language-color" style="width:1.7%; background-color:#5861ce;" itemprop="keywords">Shell</span><span class="language-color" style="width:0.9%; background-color:#ccc;" itemprop="keywords">Other</span>
+  </a>
+
+
+
+
+<div class="file-navigation in-mid-page">
+    <a href="/kripken/ammo.js/compare" aria-label="Compare, review, create a pull request" class="minibutton compact primary tooltipped downwards" title="Compare &amp; review" data-pjax>
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/kripken/ammo.js/tree/gh-pages" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="gh-pages" data-skip-pjax="true" rel="nofollow" title="gh-pages">gh-pages</a>
+            </div> <!-- /.select-menu-item -->
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/kripken/ammo.js/tree/master" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" data-skip-pjax="true" rel="nofollow" title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/kripken/ammo.js" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">ammo.js</span></a></span></span><span class="separator"> / </span><form action="/login?return_to=%2Fkripken%2Fammo.js" class="js-new-blob-form tooltipped rightwards new-file-link" method="post" title="Sign in to make or propose changes"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-file-add" data-test-id="create-new-git-file" role="button"></span></form></div>
+</div>
+
+
+
+<a href="/kripken/ammo.js/find/master"
+  data-hotkey="t" style="display:none" data-pjax>Show File Finder</a>
+<div class="bubble files-bubble">
+  <table class="files" data-pjax>
+    <thead>
+
+        
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/kripken/ammo.js/commit/831592c13c4f2a8ae02270b9bb9e81e9677be13d" class="message" data-pjax="true" title="add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY by ...
+
+...default)">add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY …</a>
+        <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+      <div class="commit-desc"><pre>&#8230;by default)</pre></div>
+    <div class="commit-meta">
+      <span class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="831592c13c4f2a8ae02270b9bb9e81e9677be13d" data-copied-hint="copied!" title="Copy SHA"><span class="octicon octicon-clippy"></span></span>
+      <a href="/kripken/ammo.js/commit/831592c13c4f2a8ae02270b9bb9e81e9677be13d" class="sha-block" data-pjax>latest commit <span class="sha">831592c13c</span></a>
+
+      <div class="authorship">
+        <img class="gravatar" height="20" src="https://0.gravatar.com/avatar/cb9f8cd8da97fa3a92e46ebe576e8050?d=https%3A%2F%2Fidenticons.github.com%2F1281e3a93c7808e67d7544cf0bd3e78c.png&amp;s=140" width="20" />
+        <span class="author-name"><a href="/kripken" data-skip-pjax="true" rel="author">kripken</a></span>
+        authored <time class="js-relative-date updated" datetime="2013-08-27T10:44:40-07:00" title="2013-08-27 10:44:40">August 27, 2013</time>
+
+      </div>
+    </div>
+  </div>
+
+    </thead>
+
+    
+<tbody class=""
+  data-url="/kripken/ammo.js/file-list/master">
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/tree/master/builds" class="js-directory-link" id="cd255022df04facc108ae4d30a05e7bb-93204325aa3b4e6e0e9bf20680a82ad3d66f6042" title="builds">builds</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/831592c13c4f2a8ae02270b9bb9e81e9677be13d" class="message" data-pjax="true" title="add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY by ...
+
+...default)">add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY …</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-08-27T10:44:40-07:00" title="2013-08-27 10:44:40">August 27, 2013</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/tree/master/bullet" class="js-directory-link" id="a0cdbd2af8f1ddbb2748a2eaddce55da-ea665bd372cad075cc688f6eaa5584b24e498740" title="bullet">bullet</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/140c06c8c3b62f3862e1214e55cc391f079d54a7" class="message" data-pjax="true" title="add workaround for issue #28">add workaround for issue</a> <a href="https://github.com/kripken/ammo.js/issues/28" class="issue-link" title="Latest ammo.js build breaks various online demos">#28</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2012-11-07T16:49:22-08:00" title="2012-11-07 16:49:22">November 07, 2012</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/tree/master/examples" class="js-directory-link" id="bfebe34154a0dfd9fc7b447fc9ed74e9-a4c46ef70b7449edfd01a90455ad5f21ce3d842f" title="examples">examples</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/99a152374d478e47cb04c3e60efc0321d6d30522" class="message" data-pjax="true" title="fix highp in cubicvr to lowp">fix highp in cubicvr to lowp</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-05-16T15:26:11-07:00" title="2013-05-16 15:26:11">May 16, 2013</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/tree/master/tests" class="js-directory-link" id="b61a6d542f9036550ba9c401c80f00ef-e9c526a9147d782d047e8f3978d5518d436e7da1" title="tests">tests</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/b3dcc54026fc6bdcd80287dfefabadcc52bdf1af" class="message" data-pjax="true" title="improve stress benchmark">improve stress benchmark</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-08-23T18:03:31-07:00" title="2013-08-23 18:03:31">August 23, 2013</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-e6de078d3aef25553178cf080a0dfbb3724c7a31" title=".gitignore">.gitignore</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/1e2757de06fc8c95cda52bc546aa265fb40128d7" class="message" data-pjax="true" title="rewrite and improve workarounds">rewrite and improve workarounds</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2011-08-06T16:07:07-07:00" title="2011-08-06 16:07:07">August 06, 2011</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/AUTHORS" class="js-directory-link" id="3d350169560e75d0cf9fc8e3574a3639-f1e1f7efba42e671a8392328b2066480f3eb74d9" title="AUTHORS">AUTHORS</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/1e118181ee68829d75bda11917f5271e88a73150" class="message" data-pjax="true" title="AUTHORS file">AUTHORS file</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2011-09-05T11:09:41-07:00" title="2011-09-05 11:09:41">September 05, 2011</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/LICENSE" class="js-directory-link" id="9879d6db96fd29134fc802214163b95a-0fe05a5cb47214779a6c0c445971e3e37e942a0f" title="LICENSE">LICENSE</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/1e118181ee68829d75bda11917f5271e88a73150" class="message" data-pjax="true" title="AUTHORS file">AUTHORS file</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2011-09-05T11:09:41-07:00" title="2011-09-05 11:09:41">September 05, 2011</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/README.markdown" class="js-directory-link" id="0a369498a5a8db3ac8fa606b544c9810-2c36e05924e0d65466936e606799d8e79163e15a" title="README.markdown">README.markdown</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/bf2fb0dda26ce6d8a8823f70d12866bd899ae193" class="message" data-pjax="true" title="update demo link">update demo link</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-03-22T16:25:47-07:00" title="2013-03-22 16:25:47">March 22, 2013</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/bundle.py" class="js-directory-link" id="39c8e499506bb93e901ed93e01dcf34d-c5d537c0803a6a24d0b3cbc82e84d8160a8bc8f9" title="bundle.py">bundle.py</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/878e9c04b2a38d47db19372b398851ae0cb01f70" class="message" data-pjax="true" title="updated build">updated build</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2012-10-28T21:43:08-07:00" title="2012-10-28 21:43:08">October 28, 2012</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/make.py" class="js-directory-link" id="d333d2919ed13c5156ec779d78eb84c0-cd3abe7eab0db2ad8d2d2aa1c8388f2bd1c36fea" title="make.py">make.py</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/831592c13c4f2a8ae02270b9bb9e81e9677be13d" class="message" data-pjax="true" title="add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY by ...
+
+...default)">add llvm lto (needed now that emscripten uses EMCC_OPTIMIZE_NORMALLY …</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-08-27T10:44:40-07:00" title="2013-08-27 10:44:40">August 27, 2013</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/root.h" class="js-directory-link" id="07f598d41539adef4198d105b4b9ac69-d7d0821045393b60ff7bf2e29d63edef541568a4" title="root.h">root.h</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/112af219025fb60c2383b600104994ff75fd5662" class="message" data-pjax="true" title="updated build with btHeightfieldTerrainShape">updated build with btHeightfieldTerrainShape</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2011-11-18T17:15:10-08:00" title="2011-11-18 17:15:10">November 18, 2011</time></span></td>
+    </tr>
+    <tr class="">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/test.py" class="js-directory-link" id="b284a28710cce90d9d9be3a7f4cabc8e-ca55d84392e421ec221c7f759138ee13b2b90c18" title="test.py">test.py</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/0f879834238a1fffa94b1283c993877db6919ccf" class="message" data-pjax="true" title="do not change TOTAL_MEMORY in test runner, no need since we have 50MB by...
+
+... default">do not change TOTAL_MEMORY in test runner, no need since we have 50MB…</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2013-01-03T10:52:10-08:00" title="2013-01-03 10:52:10">January 03, 2013</time></span></td>
+    </tr>
+    <tr class="alt">
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/blob/master/wrap.py" class="js-directory-link" id="62421aa4a404ba6a102fad3e7ec9fce3-5f1b8b08befb182151105a361af51dfb5595860b" title="wrap.py">wrap.py</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/kripken/ammo.js/commit/0d605aec20892f0546b1a5ac2ab4ef2115348cdc" class="message" data-pjax="true" title="updated builds, plus wrapping">updated builds, plus wrapping</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" datetime="2011-08-15T21:03:13-07:00" title="2011-08-15 21:03:13">August 15, 2011</time></span></td>
+    </tr>
+</tbody>
+
+  </table>
+</div>
+
+  <div id="readme" class="clearfix announce instapaper_body markdown">
+    <span class="name"><span class="octicon octicon-book"></span> README.markdown</span><article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="ammojs" class="anchor" href="#ammojs"><span class="octicon octicon-link"></span></a>ammo.js</h1>
+
+<p><strong>Demo: <a href="http://kripken.github.com/ammo.js/examples/new/ammo.html">http://kripken.github.com/ammo.js/examples/new/ammo.html</a></strong></p>
+
+<p><strong>Example code to give you an idea of the API: <a href="https://github.com/kripken/ammo.js/blob/master/examples/webgl_demo/ammo.html#L14">https://github.com/kripken/ammo.js/blob/master/examples/webgl_demo/ammo.html#L14</a></strong></p>
+
+<p>ammo.js is a direct port of the Bullet physics engine to JavaScript, using Emscripten. The source code is translated directly to JavaScript, without human rewriting, so functionality should be identical to the original Bullet.</p>
+
+<p>'ammo' stands for "Avoided Making My Own js physics engine by compiling bullet from C++" ;)</p>
+
+<p>ammo.js is zlib licensed, just like Bullet.</p>
+
+<p>Discussion takes place on IRC at #emscripten on Mozilla's server (irc.mozilla.org)</p>
+
+<h2>
+<a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions</h2>
+
+<p>builds/ammo.js contains a prebuilt version of ammo.js. This is probably what you want.</p>
+
+<p>You can also build ammo.js yourself, as follows:</p>
+
+<ul>
+<li>
+<p>Get Emscripten</p>
+
+<p><a href="http://emscripten.org">http://emscripten.org</a></p>
+
+<p>and set it up. See</p>
+
+<p><a href="https://github.com/kripken/emscripten/wiki/Getting-started">https://github.com/kripken/emscripten/wiki/Getting-started</a></p>
+</li>
+<li>
+<p>Run the build script,</p>
+
+<p>python make.py</p>
+
+<p>which should generate builds/ammo.js.</p>
+</li>
+<li>
+<p>Optionally, run the automatic tests,</p>
+
+<p>python test.py</p>
+</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>The most straightforward thing is if you want to write your code in C++, and
+run that on the web. If so, then compile your code into LLVM, link it with
+bullet, and compile that to JavaScript using emscripten. (The easiest way to
+link it is to add your .bc file to the llvm-link command in make.py.)</p>
+
+<p>If, on the other hand, you want to write code in JavaScript, you can use the
+autogenerated binding code. A complete example appears in</p>
+
+<p>examples/hello_world.js</p>
+
+<p>That is HelloWorld.cpp from Bullet, translated to JavaScript. Other examples
+in that directory might be useful as well. In particular see the WebGL
+demo code in</p>
+
+<p>examples/webgl_demo/ammo.html</p>
+
+<h1>
+<a name="bindings-api" class="anchor" href="#bindings-api"><span class="octicon octicon-link"></span></a>Bindings API</h1>
+
+<p>ammo.js autogenerates its API from the Bullet source code, so it should
+be basically identical. There are however some differences and things
+to be aware of:</p>
+
+<ul>
+<li>
+<p>All ammo.js elements should be accessed through Ammo.*. For example,
+Ammo.btVector3, etc., as you can see in the example code.</p>
+
+<p>Note however that by default ammo.js does <em>not</em> wrap builds in a
+closure - Ammo is just another name for |this|. The reason is that
+closure wrapping, while it keeps the global namespace clean, has
+significant performance downsides (currently 50% in the top engines).
+If you must, use a closure, but otherwise it is better not to. Note
+that it is a good idea to run ammo.js in a worker thread anyhow, in
+which case the global namespace is kept clean, and there is
+definitely no need for a closure (however, you must still be careful
+if you compile with the closure compiler, to avoid stepping on the
+minified names it generates).</p>
+
+<p>Accessing elements in ammo.js through Ammo.* is not strictly
+necessary in a normal (non-wrapped) build, but is recommended since
+it makes it easy to use a wrapped build without changing your code.</p>
+
+<p>If you do want to wrap a build in a closure, you can use wrap.py
+which is a little tool for that.</p>
+
+<p>Note that non-wrapped builds can lead to problems if the rest of
+your code uses global variables that collide with ammo.js's! You
+can run your code in JavaScript strict mode to see if that might be
+the problem, it will warn about your functions writing to global
+variables (but it won't notice your actual global variables accessed
+outside of functions). You can also check if this is the problem by
+wrapping an ammo.js build using wrap.py.</p>
+</li>
+<li>
+<p>Member variables of structs and classes can be accessed through
+setter and getter functions, that are prefixed with |get_| or |set_|.
+For example,</p>
+
+<p>rayCallback.get_m_rayToWorld()</p>
+
+<p>will get m_rayToWorld from say a ClosestRayResultCallback. Native
+JavaScript getters and setters could give a slightly nicer API here,
+however their performance is potentially problematic.</p>
+</li>
+<li><p>Functions returning or getting float&amp; or btScalar&amp; are converted to
+float. The reason is that float&amp; is basically float* with nicer syntax
+in C++, but from JavaScript you would need to write to the heap every
+time you call such a function, making usage very ugly. With this change,
+you can do |new btVector3(5, 6, 7)| and it will work as expected. If
+you find a case where you need the float&amp; method, please file an issue.</p></li>
+<li><p>Not all classes are exposed, for various reasons. Please file an issue
+if you find that something you need is missing.</p></li>
+<li>
+<p>Each call to |new X()| allocates a new object, sort of like how C++
+|new| works. You need to manually free such objects, which can be done
+in JS using</p>
+
+<p>destroy(OBJECT)</p>
+
+<p>|delete| would have been a better parallel to C++, however |delete|
+is a reserved work in JS.</p>
+
+<p>Note that there is no way to allocate objects other than with |new X()|,
+unlike in C++ where you can define an object and it is held on the stack,
+and free'd automatically. (That might be possible with WeakMaps, but
+not enough browsers support it yet.) So in practice you need to remember
+to |destroy| the objects you create. However, you can let a lot of objects
+leak, in many cases, for example when you are done with using Ammo, there
+is really no need to free all the singleton objects you used. But, if
+you do create a lot of new objects while running Ammo during a long
+session, you should probably free those objects when possible.</p>
+
+<p>Note that currently destroying a btDiscreteDynamicsWorld fails for some
+reason (but normally you create a singleton of that, so you shouldn't
+really need to destroy it anyhow).</p>
+</li>
+<li><p>Functions that return an entire object, like |btQuaternion someFunc()|,
+will return a reference to a static object held inside the binding
+function. That means that you cannot call the binding function multiple
+times and still use the values - you must copy them.</p></li>
+<li>
+<p>All the bindings functions expect to receive wrapper objects, that
+contain the raw pointer inside them, and not a raw pointer (which is
+just a memory address - an integer). You should normally not need
+to deal with raw pointers, but if you do, the following functions can
+help:</p>
+
+<p>wrapPointer(ptr, Class)   - Given a raw pointer (an integer), returns a
+                              wrapped object. Note that if you do not pass
+                              Class, it will be assumed to be
+                              |Object| - this is likely not what you want!
+  getPointer(object)        - Returns a raw pointer
+  castObject(object, Class) - Returns a wrapping of the same pointer but to
+                              another class
+  compare(object1, object2) - Compares two objects' pointers</p>
+
+<p>Note that there is always a <em>single</em> wrapped object for a certain pointer.
+This allows you to add data on that object and use it elsewhere, by using
+normal JavaScript syntax (object.attribute = someData etc.). Note that
+this almost means that compare() is not needed - since you can compare two
+objects of the same class, and if they have the same pointer they must be
+the same object - but not quite: The tricky case is where one is a subclass
+of the other, in which case the wrapped objects are different while the
+pointer is the same. So, the correct way to compare two objects is to call
+compare().</p>
+</li>
+<li>
+<p>All the bindings functions that return pointers/references/objects
+will return wrapped pointers. The only potentially confusing case is
+when they are returning a null pointer. In that case, you will get
+NULL (a global singleton with a wrapped pointer of 0) instead of null
+(the JavaScript builtin object) or 0. The reason is that by always
+returning a wrapper, you can always take the output and pass it back
+to another binding function, without that function needing to check
+the type of the argument.</p>
+
+<p>If you want to pass a null pointer, use that NULL object. The reason is that
+the bindings code is faster if it does not need to check each argument
+for its type and convert them on the fly. In practice this should not be
+an inconvenience, and you shouldn't need to think about it, because
+bindings functions return wrapped objects, so you can just pass those
+back into other bindings functions. In other words, you should normally
+never have to see a raw pointer.</p>
+</li>
+<li>
+<p>There is experimental support for binding operator functions. The following
+might work:</p>
+
+<p>operator         name in JS</p>
+
+<hr>
+<pre><code>  =              op_set
+  +              op_add
+  -              op_sub
+  *              op_mul
+  /              op_div
+ []              op_get
+ ==              op_eq
+</code></pre>
+</li>
+<li>
+<p>There is experimental support for callbacks from C++ back into JS. See
+tests/wrapping.js 's use of ConcreteContactResultCallback. Basically you
+need to create an object of a particular (concrete, not abstract) class,
+and you can then customize it's vtable, replacing some virtual functions
+with others. Note that we do not have the type signature for functions at
+runtime (we can add it, but it would bloat the library), which means you
+will need to convert types manually, so if a parameter is a pointer or
+a reference to say a btVector3, you should do</p>
+
+<p>obj = Ammo.wrapPointer(arg, Ammo.btVector3)</p>
+
+<p>and for your return value, if it is a pointer or a reference, return</p>
+
+<p>obj.ptr</p>
+
+<p>Other types (ints, doubles) can be left as-is. Note also that as mentioned
+above this approach only works for concrete classes, not abstract ones.
+That is the purpose of ConcreteContactResultCallback. You can add similar
+things to root.h as needed.</p>
+</li>
+</ul><h1>
+<a name="troubleshooting" class="anchor" href="#troubleshooting"><span class="octicon octicon-link"></span></a>Troubleshooting</h1>
+
+<ul>
+<li>
+<p>It's easy to forget to write |new| when creating an object, for
+example</p>
+
+<p>var vec = Ammo.btVector3(1,2,3); // This is wrong! Need 'new'!</p>
+
+<p>This can lead to error messages like the following:</p>
+
+<p>Cannot read property 'a' of undefined
+  Cannot read property 'ptr' of undefined</p>
+
+<p>This is an annoying aspect of JavaScript, sadly.</p>
+</li>
+</ul><h1>
+<a name="reporting-issues" class="anchor" href="#reporting-issues"><span class="octicon octicon-link"></span></a>Reporting Issues</h1>
+
+<p>If you find a bug in ammo.js and file an issue, please include a script
+that reproduces the problem. That way it is easier to debug, and we can
+then include that script in our automatic tests.</p>
+
+<h1>
+<a name="release-process" class="anchor" href="#release-process"><span class="octicon octicon-link"></span></a>Release Process</h1>
+
+<p>Pushing a new build in builds/ammo.js should be done only after the
+following steps:</p>
+
+<ul>
+<li><p>Build a safe build and make sure it passes all automatic tests. Safe
+builds contain a lot of runtime assertions that can catch potential
+bugs (similar to the sort of things valgrind can catch).</p></li>
+<li><p>Build a fast build and make sure it passes all automatic tests.</p></li>
+<li><p>Run closure compiler on that fast build and make sure it passes
+all automatic tests.</p></li>
+<li><p>Make sure that the stress test benchmark did not regress
+compared to the old build.</p></li>
+<li><p>Run the WebGL demo in examples/webgl_demo and make sure it looks
+ok.</p></li>
+</ul><h1>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h1>
+
+<ul>
+<li>The HEAP memory space may not be implemented as a flat object in
+all JS engines, especially when we use a lot of memory. Need to
+investigate this.</li>
+</ul></article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2013 <span title="0.06724s from github-fe111-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/kripken/ammo.js/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+    
+  </body>
+</html>
+

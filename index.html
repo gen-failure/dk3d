@@ -8,32 +8,107 @@
 			body {
 				font-family: Monospace;
 				background-color: #000;
-				color: #fff;
+				color: #111;
 				margin: 0px;
 				overflow: hidden;
 			}
+      #overlay {
+        position:absolute;
+        top:0px;
+        height:0px;
+        width:100%;
+        height:100%;
+        z-index:500;
+        padding:25px;
+        background-color:#ccc;
+      }
+      .vkey {
+        font-size:36px;
+        text-align:center;
+        padding-top:6px;
+      }
+      .playerContent {
+        z-index: 999;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        background-color:rgba(0,0,0,0.5);
+        text-align:center;
+      }
+
+      .playerContent video {
+        padding:5%;
+      }
+
+      .close {
+        width: 36px;
+        height: 36px;
+        position:absolute;
+        top:5px;
+        right:5px;
+        font-size:64px;
+        z-index:250px;
+      }
 		</style>
 		
 	</head>
 	<body>
-        <script src="js/3th_party/microajax.js"></script>
-        <script src="js/3th_party/json2.js"></script>
+    <script src="js/3th_party/microajax.js"></script>
+    <script src="js/3th_party/gamecontroller.min.js"></script>
+    <script src="js/3th_party/hammer.min.js"></script>
+    <script src="js/3th_party/json2.js"></script>
 		<script src="js/three.js/three.js"></script>
 		<script src="js/three.js/Detector.js"></script>
-		<script src="js/three.js/loaders/MTLLoader.js"></script>
-		<script src="js/three.js/loaders/OBJMTLLoader.js"></script>
 		<script src="js/physi.js/physi.js"></script>
-		<script src="js/pc3d/pc3d.js"></script>
-		<script src="js/pc3d/FPControls.js"></script>
-		<script src="js/pc3d/world.js"></script>
-		
-		<div id="container" style="width:100%;height:100%;"></div>
+		<script src="js/dk3d/dk3d.js"></script>
+		<script src="js/dk3d/FPControls.js"></script>
+		<script src="js/dk3d/engine.js"></script>
+    <script src="js/dk3d/scene_initializer.js"></script>
+    <script src="js/dk3d/screen.js"></script>
+    <script src="js/dk3d/screen_types.js"></script>
+		<script src="js/dk3d/world.js"></script>
+    <div id="page">
+      <div id="overlay">
+        <h1>Virtual showroom demo</h1>
+        <img src="img/logo.jpg" alt="logo" style="float:left;width:25%;height:25%;padding:20px;" />
+        <div style="padding-top:5px;padding-left:10px;">
+          <ul>
+              <li>Use W/S/A/D to navigate</li>
+              <li><b>Fullscreen mode is designed mostly for small touch devices, on pc it's often disables keyboard</b></li>
+              <li>All demo content is taken from <a http="http://dilbert.com"w>dilbert.com</a> or from Dilbert TV Show.</li>
+              <li>Use rigt button or mouse swiping to look around</li>
+              <li>Click on a screen to activate</li>
+            </ul>
+            <span id="buttonArea">Loading presentation... </span>
+            <button id="fsb">Full screen</button>
+          </div>
+        </div>
+      <div id="container" style="width:100%;height:100%;"></div>
+    </div>
 		<script language="JavaScript">
-			world = new PC3D.World('KMSMA001', {'debug':true});
-			world.setContainer(document.getElementById('container'));
-			world.loadPresentation();
-			world.useFPControls();
-			world.start();
+    (function() {
+      document.getElementById('fsb').addEventListener('click',function() {
+        addEventListener("click", function() {
+          var el = document.documentElement
+          rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
+          rfs.call(document.getElementById('page'));
+});
+       });
+      document.addEventListener('worldReady',function() {
+        b = document.createElement('button');
+        b.innerHTML='Enter the showroom!'
+        b.onclick=startWorld;
+        document.getElementById('buttonArea').innerHTML='';
+        document.getElementById('overlay').appendChild(b);
+      });
+      function startWorld() {
+        document.getElementById('page').removeChild(document.getElementById('overlay'));
+        world.start();
+      }
+    })();
+			world = new DK3D.World('TEST002', {debug:false, container : document.getElementById('container')});
 		</script>
 	</body>
 </html>
